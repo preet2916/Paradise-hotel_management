@@ -1,0 +1,71 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site2.master.cs" Inherits="hotel_management.Site2" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <style type="text/css">
+        html, body
+        {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        html, body, .left, .right
+        {
+            height: 100%;
+        }
+        .left
+        {
+            float: left;
+            height: 100%;
+            width: 20%;
+            border-bottom: 2px solid #000000;
+            border-left: 2px solid #000000;
+        }
+        .right
+        {
+            float: left;
+            position: absolute;
+            height: 100%;
+            width: 80%;
+            border: 2px solid #000000;
+        }
+        .top
+        {
+            border-top: 2px solid #000000;
+            border-left: 2px solid #000000;
+            border-right: 2px solid #000000;
+            height: 100px;
+        }
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+             <div class="top">
+        <h1 style="text-align: center;">
+            www.aspforums.net</h1>
+        <br />
+    </div>
+    <div class="left">
+        <ul>
+            <li style="margin-top: 0px"><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">News</a></li>
+        </ul>
+    </div>
+    <div class="right">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+            </div>
+    </form>
+</body>
+</html>
